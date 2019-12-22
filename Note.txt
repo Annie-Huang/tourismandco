@@ -16,7 +16,7 @@ In order to run your application, type:
 Copy everything from https://github.com/seenickcode/tourismandco/tree/step/step01/lib to
 C:\react\tourismandco\lib
 
-
+Need to restart the app if you ever change file names.
 
 
 
