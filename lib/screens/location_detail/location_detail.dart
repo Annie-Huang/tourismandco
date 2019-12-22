@@ -10,6 +10,8 @@ class LocationDetail extends StatelessWidget {
         title: Text('Hello'),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
             decoration: BoxDecoration(
