@@ -1,0 +1,16 @@
+https://www.youtube.com/watch?v=pTJJsmejUOQ&t=1s
+https://github.com/seenickcode/tourismandco/tree/step/step01
+https://github.com/Annie-Huang/tourismandco
+
+
+=====================================================
+
+C:\react>flutter create tourismandco
+...
+In order to run your application, type:
+
+  $ cd tourismandco
+  $ flutter run
+
+
+
