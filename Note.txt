@@ -13,6 +13,10 @@ In order to run your application, type:
   $ flutter run
 
 
+Copy everything from https://github.com/seenickcode/tourismandco/tree/step/step01/lib to
+C:\react\tourismandco\lib
+
+
 
 
 
