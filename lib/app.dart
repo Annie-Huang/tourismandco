@@ -14,15 +14,7 @@ class App extends StatelessWidget {
     return MaterialApp(
 //      home: Locations(),
       onGenerateRoute: _routes(),
-      theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          textTheme: TextTheme(title: AppBarTextStyle),
-        ),
-        textTheme: TextTheme(
-          title: TitleTextStyle,
-          body1: Body1TextStyle
-        )
-      ),
+      theme: _theme()
     );
   }
 
@@ -42,5 +34,17 @@ class App extends StatelessWidget {
       }
       return MaterialPageRoute(builder: (BuildContext context) => screen);
     };
+  }
+
+  ThemeData _theme() {
+    return ThemeData(
+        appBarTheme: AppBarTheme(
+          textTheme: TextTheme(title: AppBarTextStyle),
+        ),
+        textTheme: TextTheme(
+            title: TitleTextStyle,
+            body1: Body1TextStyle
+        )
+    );
   }
 }
