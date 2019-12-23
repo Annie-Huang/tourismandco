@@ -12,9 +12,8 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-//      home: Locations(),
       onGenerateRoute: _routes(),
-      theme: _theme()
+      theme: _theme(),
     );
   }
 
