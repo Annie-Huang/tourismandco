@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class TextSection extends StatelessWidget {
   final String _title;
   final String _body;
+  static const double _hPad = 16.0; // horizontal padding
 
 //  TextSection(Color color) {
 //    this._color = color;
@@ -16,8 +17,14 @@ class TextSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(_title),
-        Text(_body),
+        Container(
+          padding: const EdgeInsets.fromLTRB(_hPad, 32.0, _hPad, 4.0),
+          child: Text(_title),
+        ),
+        Container(
+          padding: const EdgeInsets.fromLTRB(_hPad, 10.0, _hPad, _hPad),
+          child: Text(_body),
+        ),
       ],
     );
   }
