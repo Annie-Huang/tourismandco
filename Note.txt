@@ -6,6 +6,7 @@ https://raw.githubusercontent.com/seenickcode/tourismandco/step/step03/assets/im
 https://github.com/seenickcode/tourismandco/tree/step/step04/assets/fonts
 
 https://dart.dev/codelabs/dart-cheatsheet
+https://api.flutter.dev/flutter/widgets/GestureDetector-class.html
 
 =====================================================
 Cascades
