@@ -4,24 +4,30 @@
 import 'package:flutter/material.dart';
 import 'image_banner.dart';
 import 'text_section.dart';
+import '../../models/location.dart';
 
 class LocationDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final locations = Location.fetchAll();
+    final location = locations.first;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hello'),
+        title: Text(location.name),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          ImageBanner("assets/images/kiyomizu-dera.jpg"),
-          TextSection("summary", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ea odio quibusdam rem voluptas! Aspernatur aut minus repudiandae sed totam."),
-          TextSection("summary", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ea odio quibusdam rem voluptas! Aspernatur aut minus repudiandae sed totam."),
-          TextSection("summary", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae ea odio quibusdam rem voluptas! Aspernatur aut minus repudiandae sed totam."),
-        ]
+          ImageBanner(location.imagePath)
+        ]..addAll(textSections(location))
       ),
     );
+  }
+
+  List<Widget> textSections(Location location) {
+    // when you use =>, it allow you to return a single statement, otherwise, you can use () {} instead
+    return location.facts.map((fact) => TextSection(fact.title, fact.text)).toList();
   }
 }

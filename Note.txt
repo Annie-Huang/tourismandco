@@ -5,7 +5,29 @@ https://github.com/Annie-Huang/tourismandco
 https://raw.githubusercontent.com/seenickcode/tourismandco/step/step03/assets/images/kiyomizu-dera.jpg
 https://github.com/seenickcode/tourismandco/tree/step/step04/assets/fonts
 
+https://dart.dev/codelabs/dart-cheatsheet
+
 =====================================================
+Cascades
+myObject..someMethod()
+Although it still invokes someMethod() on myObject, the result of the expression isn’t the return value —
+it’s a reference to myObject! Using cascades, you can chain together operations that would otherwise
+require separate statements.
+
+var button = querySelector('#confirm');
+button.text = 'Confirm';
+button.classes.add('important');
+button.onClick.listen((e) => window.alert('Confirmed!'));
+
+With cascades, the code becomes much shorter, and you don’t need the button variable:
+
+querySelector('#confirm')
+..text = 'Confirm'
+..classes.add('important')
+..onClick.listen((e) => window.alert('Confirmed!'));
+
+=====================================================
+
 
 C:\react>flutter create tourismandco
 ...
@@ -19,6 +41,8 @@ Copy everything from https://github.com/seenickcode/tourismandco/tree/step/step0
 C:\react\tourismandco\lib
 
 Need to restart the app if you ever change file names.
+
+
 
 
 
