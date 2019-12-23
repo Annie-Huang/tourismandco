@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'screens/locations/locations.dart';
 import 'style.dart';
 
+const LocationsRoute = '/';
+const LocationDetailRoute = '/location_detail';
+
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

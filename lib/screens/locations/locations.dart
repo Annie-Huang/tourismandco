@@ -28,7 +28,6 @@ class Locations extends StatelessWidget {
 
   // You can add the word void in front:
   _onLocationTap(BuildContext context, int locationID) {
-
-
+    Navigator.pushNamed(context, LocationsRoute, arguments: {"id": locationID});
   }
 }
