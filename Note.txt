@@ -3,6 +3,7 @@ https://github.com/seenickcode/tourismandco/tree/step/step01
 https://github.com/Annie-Huang/tourismandco
 
 https://raw.githubusercontent.com/seenickcode/tourismandco/step/step03/assets/images/kiyomizu-dera.jpg
+https://github.com/seenickcode/tourismandco/tree/step/step04/assets/fonts
 
 =====================================================
 
