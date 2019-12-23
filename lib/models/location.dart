@@ -30,4 +30,15 @@ class Location {
       ]),
     ];
   }
+
+  static Location fetchByID(int locationID) {
+    // NOTE: this will replaced by a proper API call
+    List<Location> locations = Location.fetchAll();
+    for (var i = 0; i < locations.length; i++) {
+      if (locations[i].id == locationID) {
+        return locations[i];
+      }
+    }
+    return null;
+  }
 }
